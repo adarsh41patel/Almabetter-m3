@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Responsive Layout</title>
+</head>
+<body>
+    <!-- flexbox layout -->
+     <section class="flex justify-between items-center p-5 bg-blue-200 mb-5">
+        <!-- heder section -->
+         <div class="text-lg font-bold">Logo</div>
+        <nav  class="space-x-4">
+            <a href="#" class="hover:text-blue-500">Home</a>
+            <a href="#" class="hover:text-blue-500">About</a>
+            <a href="#" class="hover:text-blue-500">Contact</a>
+
+        </nav>
+    </section>
+
+      <!-- main content flex -->
+    <div class="flex justify-center items-center p-5 space-x-5">
+        <div class="w-52 h-52 bg-red-300 flex items-center justify-center text-white">BOx 1 </div>
+        <div class="w-52 h-52 bg-blue-300 flex items-center justify-center text-white">Box 2</div>
+        <div class="w-52 h-52 bg-green-300 flex items-center justify-center text-white">BOx 3</div>
+    </div>
+
+    <!-- gird Layout -->
+
+    <section class="grid grid-cols-3 gap-4 p-5">
+        <div class="bg-red-300 h-24 text-white flex-center justify-center">Box 1</div>
+        <div class="bg-blue-300 h-24 text-white flex-center justify-center">Box 2</div>
+        <div class="bg-green-300 h-24 text-white flex-center justify-center">Box 3</div>
+        <div class="bg-yellow-300 h-24 text-white flex-center justify-center">Box 4</div>
+        <div class="bg-purple-300 h-24 text-white flex-center justify-center">Box 5</div>
+        <div class="bg-pink-300 h-24 text-white flex-center justify-center">Box 6</div>
+    </section>
+
+    <!-- position  -->
+     <div class="relative bg-blue-200 p-5">
+        <div class="fixed top-5 left-5 w-24 h-24 bg-green-600 text-white">
+            Flex Box 
+        </div>
+
+        <div class=" mt-32 p-5 text lg">
+          Scroll down to see the fixed box in acction
+        </div>
+     </div>
+
+     <!-- section -->
+      <section class="bg-gray-800 text-white p-5 mt-10">
+        <p class="text-center">Footer content</p>
+      </section>
+   
+
+    
+</body>
+</html>
